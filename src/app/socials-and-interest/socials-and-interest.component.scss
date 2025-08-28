@@ -1,0 +1,38 @@
+.top-row {
+  height: 70%;
+}
+
+.bottom-row {
+  height: 30%;
+}
+
+.content-box {
+  // background-color: white;
+  padding: 20px;
+  // height: 100%;
+}
+
+// --------------------------------------------- List styling for education ---------------------------------------------
+ul.education-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.education-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+ul.education-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../../assets/folder-icon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+// ----------------------------------------------------------------------------------------------------------------------

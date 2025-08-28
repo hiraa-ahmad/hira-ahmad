@@ -1,40 +1,3 @@
-// Introduction
-.introduction {
-  .top-row {
-    height: auto;
-    padding: 15px;
-  }
-  .bottom-row {
-    // height: calc(70vh - 50px);
-    padding: 15px;
-
-    @media (min-width: 768px) {
-      height: calc(70vh - 50px);
-    }
-  }
-  // Image
-  .bg-fit-image {
-    background-image: url("../assets/profile-image.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 200px;
-
-    @media (min-width: 768px) {
-      min-height: 100%;
-    }
-  }
-}
-
-.my-box {
-  // background-color: yellowgreen;
-  padding: 15px;
-}
-
-
-
-
-// Education
 .left-box,
 .right-box {
   padding: 20px;
@@ -76,11 +39,12 @@ ul.education-list li::before {
   top: 5px;
   width: 30px;
   height: 30px;
-  background-image: url("../assets/folder-icon.png");
+  background-image: url('../../assets/folder-icon.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 // ----------------------------------------------------------------------------------------------------------------------
+
 
 // --------------------------------------------- List styling for abilities ---------------------------------------------
 
@@ -106,7 +70,7 @@ ul.abilities-list li::before {
   width: 30px;
   height: 30px;
   // background-image: url("C:/Users/PMLS/Desktop/angular first project/hira-portfolio/src/assets/star.png");
-  background-image: url("../assets/star.png");
+  background-image: url('../../assets/star.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -114,43 +78,7 @@ ul.abilities-list li::before {
 // ----------------------------------------------------------------------------------------------------------------------
 
 
-ul.contact-list {
-  list-style: none;
-  padding-left: 0;
-
-  li {
-    position: relative;
-    padding-left: 40px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-
-    &::before {
-      content: "";
-      padding: 0;
-      position: absolute;
-      left: 0;
-      top: 5px;
-      width: 35px;
-      height: 35px;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    &.email-icon::before {
-      background-image: url("../assets/message.png");
-    }
-
-    &.github-icon::before {
-      background-image: url("../assets/github.png");
-    }
-
-    &.linkedin-icon::before {
-      background-image: url("../assets/linkedin.png");
-    }
-
-    &.phone-icon::before {
-      background-image: url("../assets/phone.png");
-    }
-  }
+.intro-text h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
 }

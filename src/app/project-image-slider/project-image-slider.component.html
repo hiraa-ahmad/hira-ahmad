@@ -1,0 +1,26 @@
+<section class="main-container mb-2 py-2">
+
+  <div class="slider" (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
+    <!-- Slides -->
+    <div class="slides retro-border p-1">
+      <div class="slide" *ngFor="let img of images; let i = index" [class.active]="i === currentIndex">
+        <img [src]="img" alt="Slide {{ i + 1 }}" />
+      </div>
+    </div>
+
+    <!-- Prev & Next Buttons -->
+    <button class="prev" (click)="prevSlide()">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="next" (click)="nextSlide()">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Dots -->
+    <div class="dots">
+      <span *ngFor="let img of images; let i = index" class="dot" [class.active]="i === currentIndex"
+        (click)="goToSlide(i)"></span>
+    </div>
+  </div>
+
+</section>
